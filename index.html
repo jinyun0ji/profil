@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>Subin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script src="script.js"></script>
+  <div class="sidebar">
+    <div class="logo_container">
+      <img class="logo" src="./images/profil.jpeg">
+    </div>
+    <div class="menu-items">
+      <div class="menu-item">
+        <h3>Hi, &nbsp<strong>I`m subin</strong></h3>
+      </div>
+      <div class="menu-item">
+        <p class="active">I`m ML Engineer, Deeplearning Engineer.</p>
+      </div>
+      <div class="menu-item">
+        <div class="social">
+          <a href="https://www.instagram.com/jinyun0ji?igsh=MXBmNjRkazJzOWR3cg%3D%3D&utm_source=qr">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://github.com/">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://velog.io/@lucete/posts">
+            <i class="bi bi-share"></i>
+          </a>
+        </div>
+        <button class="like">♥</button>
+        <script src="like.js"></script>
+      </div>
+    </div>
+    <hr class="sidebar_line">
+    <ul class="menu-items">
+      <button class="menu-item category" onclick="goToScroll('features')">
+        <i class="bi bi-list-check" alt="features"></i>
+        Features
+      </button>
+      <button class="menu-item category" onclick="goToScroll('portfolio')">
+        <i class="bi bi-grid" alt="Portfolio"></i>
+        Portfolio
+      </button>
+      <button class="menu-item category" onclick="goToScroll('contact')">
+        <i class="bi bi-telephone-forward" alt="Contact"></i>
+        Contact
+      </button>
+    </ul>
+  </div>
+  <div class="container">
+    <div class="header">
+      <div>
+        <h2>Project</h2>
+        <p> 2020203027 소프트웨어학부 박수빈 </p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <section class="features">
+      <div class="featured">
+        <div class="featured-content">
+          <div class="featured-tag">Features</div>
+          <h2 class="title">
+            What I Do
+          </h2>
+          <div class="do-me">                
+            <div class="do-inner">
+              <div class="icon">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <div class="content">
+                <h3>HTML5</h3>
+                <p class="featured-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo culpa magni laboriosam sit excepturi quibusdam adipisci, vero debitis?</p>
+              </div>
+            </div>        
+            <div class="do-inner">
+              <div class="icon">
+                <i class="fa-brands fa-css3-alt"></i>        
+              </div>
+              <div class="content">
+                <h3>CSS3</h3>
+                <p class="featured-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo culpa magni laboriosam sit excepturi quibusdam adipisci, vero debitis?</p>
+              </div>
+            </div>
+            <div class="do-inner">
+              <div class="icon">
+                <i class="fa-brands fa-bootstrap"></i>
+              </div>
+              <div class="content">
+                <h3>BootStrap v5.0</h3>
+                <p class="featured-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo culpa magni laboriosam sit excepturi quibusdam adipisci, vero debitis?</p>
+              </div>
+            </div>
+            <div class="do-inner">
+              <div class="icon">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <div class="content">
+                <h3>Python</h3>
+                <p class="featured-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo culpa magni laboriosam sit excepturi quibusdam adipisci, vero debitis?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <section id="portfolio_back">
+    <div class="portfolio">
+      <div class="portfolio-tag">PortFolio</div>
+      <h2 class="title">License</h2>
+      <div class="portfolio-me">
+        <div class="portfolio-inner">
+          <img src="./images/ADsP.jpg" alt="">
+          <div class="license-text">
+            <h3>ADsP</h3>
+            <hr class="portfolio-hr">
+            <p>데이터분석 준전문가(ADsP : Advanced Data Analytics Semi-Professional)란 
+              데이터 이해에 대한 기본지식을 바탕으로 데이터분석 기획 및 데이터분석 등의 직무를 수행하는 실무자를 말한다.</p>
+          </div>
+        </div>
+        <div class="portfolio-inner">
+          <img src="./images/SQLD.jpg" alt="">
+          <div class="license-text">
+            <h3>SQLD</h3>
+            <hr class="portfolio-hr">
+            <p>SQL 개발자(SQLD*, SQL Developer)란 
+              데이터베이스와 데이터 모델링에 대한 지식을 바탕으로 
+              응용 소프트웨어를 개발하면서 데이터를 조작하고 추출하는데 있어서 
+              정확하고 최적의 성능을 발휘하는 SQL을 작성할 수 있는 개발자를 말한다. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact_back">
+    <div class="contact">
+      <div class="contact-tag">Contact</div>
+      <h2 class="title">Contact With Me</h2>
+      <div class="contact-me">
+        <div class="contact-inner">
+          <form>
+            <h1>Message</h1>
+            <label>name</label>
+            <input
+              name="username"
+              type="text"
+              placeholder="name"
+            />
+            <label>email</label>
+            <input
+              name="email"
+              type="email"
+              placeholder="email"
+            />
+            <label>message</label>
+            <input class="message"
+              name="message"
+              type="text"
+              placeholder="message"
+            />
+            <button class="form-button" type="reset">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+</body>
+</html>
